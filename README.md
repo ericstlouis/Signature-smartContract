@@ -1,15 +1,30 @@
-# Basic Sample Hardhat Project
+# Verifying Signature
+> A simple smart contract that verify signatures
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This smart contract demonstrates a how to Sign and Verify. The Signature contract allows you to hash your message with other required parameters than you uses the hash message to sign your message off chain using ether.js. To **verify** the signature you must call _getEthSignedMessageHash_, **recover** the signer from signature and hash and then Compare recovered signer to claimed signer.
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+ Quick Start
+
+required: [Node](https://nodejs.org/dist/latest-v12.x/) plus [Yarn](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
+
+
+```bash
+git clone https://github.com/ericstlouis/Signature-smartContract.git
+
+cd Signature-smartContract
+
+git Signature-smartContract
+```
+
+```bash
+
+yarn install
+
+```
+
+```bash
+
+yarn hardhat test
+
 ```
